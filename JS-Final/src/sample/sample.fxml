@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Canvas fx:id="mainCanvas" height="500.0" layoutX="53.0" layoutY="52.0" width="500.0" />
+      <Button fx:id="atkBtn" layoutX="53.0" layoutY="578.0" mnemonicParsing="false" onAction="#handleAttackBtn" prefHeight="36.0" prefWidth="103.0" text="Attack" />
+      <Button fx:id="moveBtn" layoutX="190.0" layoutY="578.0" mnemonicParsing="false" onAction="#handleMoveBtn" prefHeight="36.0" prefWidth="103.0" text="Move" />
+      <ListView fx:id="inventoryLs" layoutX="53.0" layoutY="632.0" prefHeight="200.0" prefWidth="517.0" />
+      <Button fx:id="useItemBtn" layoutX="584.0" layoutY="632.0" mnemonicParsing="false" onAction="#handleUseItemBtn" prefHeight="36.0" prefWidth="103.0" text="Use Item" />
+      <Button fx:id="nextBtn" layoutX="599.0" layoutY="52.0" mnemonicParsing="false" onAction="#handleNextBtn" prefHeight="36.0" prefWidth="103.0" text="Next Room" />
+      <Button fx:id="usePropBtn" layoutX="318.0" layoutY="578.0" mnemonicParsing="false" onAction="#handleUsePropBtn" prefHeight="36.0" prefWidth="103.0" text="Use Prop" />
+      <TextArea fx:id="resultsTxb" editable="false" layoutX="560.0" layoutY="98.0" prefHeight="455.0" prefWidth="193.0" />
+      <Label layoutX="452.0" layoutY="588.0" text="Health:" />
+      <Label fx:id="curHpLbl" layoutX="513.0" layoutY="588.0" text="curhp" />
+      <Label layoutX="546.0" layoutY="588.0" text="/" />
+      <Label fx:id="maxHpLbl" layoutX="560.0" layoutY="588.0" text="Maxhp" />
+   </children>
+</AnchorPane>
